@@ -27,4 +27,4 @@ Sometimes, you push `git push` and you get:
 `error: src refspec refs/heads/master matches more than one`
 `error: failed to push some refs to 'git@github.com:tableaunoir/tableaunoir.git'`
 
-I do not know how to solve that and what it means.
+These error messages are very explicit (joke). In clear, it usually means that a branch and a tag have the same name. Just delete/rename tag. You can rename/delete tags in the interface of github. Also, some releases may be generated so maybe a script is running and keeps generating some tag with the same name than a branch.
