@@ -26,6 +26,11 @@ Run  `git remote set-url origin blablablabla` where `blablablabla` is the addres
 Run `git commit --amend -m "New commit message"`.
 
 
+## Branch
+
+`git branch` lists the existing branches (and does not branch, as its name says). To create a branch, do `git branch <nameofmybranch`.
+
+
 
 ## Push
 
