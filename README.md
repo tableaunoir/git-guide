@@ -42,3 +42,9 @@ These error messages are very explicit (joke). In clear, it usually means that a
 
 `git branch` lists the existing branches (and does not branch, as its name says). To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ...").
 To move to a branch, we could have imagined "git changebranch ..." or "git gotobranch ...", but no.. it is `git checkout <nameofmybranch>`. 
+
+
+Suppose you have a branch called `amazingfix` and you want to include this amazing fix into the main branch `master`. Proceed as follows:
+- goto branch `master` via `git checkout master`
+- rappatriate the new amazing fix `git merge amazingfix`
+
