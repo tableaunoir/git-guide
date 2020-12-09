@@ -40,4 +40,5 @@ These error messages are very explicit (joke). In clear, it usually means that a
 
 ## Branches
 
-`git branch` lists the existing branches (and does not branch, as its name says). To create a branch, do `git branch <nameofmybranch`.
+`git branch` lists the existing branches (and does not branch, as its name says). To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ...").
+To move to a branch, we could have imagined "git changebranch ..." or "git gotobranch ...", but no.. it is `git checkout <nameofmybranch>`. 
