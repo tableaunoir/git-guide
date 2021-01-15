@@ -21,7 +21,17 @@ For removing a file, simply remove it!
 ## Conflicts
 
  Sometimes, the system indicates that you have made changes that differ from what your colleagues have done. In that case, do `git pull` before.
-    Sometimes, there are conflicts meaning that you and some other colleagues worked on the same part of the project. In that case, edit the files and keep the version of the lines you like. In order to solve conflicts, I strongly recommend to use Visual Studio Code for editing text files, because solving conflicts is as easy as clicking!
+    Sometimes, there are conflicts meaning that you and some other colleagues worked on the same part of the project. Some file contains portions like:
+   
+    `<<<<<<< HEAD`
+        `what you have on your computer`
+    `=======`
+       `what others have done`
+    `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7`
+    
+ (do not ask me what is `cbc151ae7fa34600f830302e52d85d6109aab9c7`, git should remain a bit obscure ;) )
+    
+    In that case, just edit the files and keep the version of the lines you like. Remove the ugly lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7`. Also, in order to solve conflicts, I strongly recommend to use Visual Studio Code for editing text files, because solving conflicts is as easy as clicking!
     In case of conflicts, if they are solved, simply do `git commit -a -m "conflict solved"` and `git push`.
 
 
