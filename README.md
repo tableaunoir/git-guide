@@ -1,6 +1,6 @@
 # How to use git
 
-git is very easy to use. You just have to learn 1024 different commands.
+This guide is sarcastic. Of we all love git! git is very easy to use. You just have to learn 1024 different commands.
 
 ## Basics
 
@@ -12,16 +12,16 @@ In order to install a project on your computer, open a terminal in the folder yo
 
 Whereever you want to work, open a terminal in the folder of your project. First, in order to get all the changes made by your colleagues, `run git pull`.
     Work locally as you are used to work. When you think that you made some progress that you want to stamp, run `git commit -a -m "I added a new section"`.
-    When you want to share all your committed work with your colleagues, run `git push`.
+    When you want to share all your committed work with your colleagues, run `git push`. In `git` the commit and the push phases are distinct, otherwise it would have been too simple.
 
-For removing a file, simply remove it!
+For removing a file, simply remove it! That is may too complicated, they should have invented a special command for that, but no, this time, it is simple.
    For adding a file that you want git to keep track, run `git add miaou.txt` where `miaou.txt` is the file you want to add.
    
   
   
 ## Git pull
 
-Sometimes `git pull` is made difficult. Do you know why? Because `git` opens a `vi` interface! `vi` is a very super-easy intuitive text editor, and it is so obvious that quitting `vi` is by pressing Ctrl + XW (I think).
+Sometimes `git pull` is made difficult. Do you know why? Because `git` opens a `vi` interface! `vi` is a very super-easy intuitive text editor, and it is so obvious that quitting `vi` is by pressing Ctrl + XW (I think). `git` could have been coupled by default with another text editor, or could have embedded its own editor, but they preffered to choose the best super-easy intuitive text editor: `vi`.
    
   
 ## Conflicts
@@ -38,7 +38,7 @@ Sometimes `git pull` is made difficult. Do you know why? Because `git` opens a `
  (do not ask me what is `cbc151ae7fa34600f830302e52d85d6109aab9c7`, git should remain a bit obscure ;) )
     
     In that case, just edit the files and keep the version of the lines you like. Remove the ugly lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7`. Also, in order to solve conflicts, I strongly recommend to use Visual Studio Code for editing text files, because solving conflicts is as easy as clicking!
-    In case of conflicts, if they are solved, simply do `git commit -a -m "conflict solved"` and `git push`.
+    In case of conflicts, if they are solved, simply do `git commit -a -m "conflict solved"` and `git push`. I do not know what happens if your file contains lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7` on purpose. It would be very interesting to know which lines are the real content of the files and which are the new lines inserted by git. Hum... no it is not interesting.
 
 
 
@@ -51,7 +51,9 @@ Run `ssh-keygen -t rsa -b 4096`.
 
 ## Branches
 
-`git branch` lists the existing branches (and does not branch, as its name says). To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ...").
+Branching is a nice mechanism, but its use is counterintuitively simple. For instance, if you want to list the existing branches, but to branch, use `git branch`. Yes! `git branch` does not branch, otherwise the name of the command would have been to transparent. A command like "git list-branch" would have been too crystal clear. 
+
+To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ..."). 
 To move to a branch, we could have imagined "git changebranch ..." or "git gotobranch ...", but no.. it is `git checkout <nameofmybranch>`. 
 
 
@@ -77,11 +79,12 @@ Run  `git remote set-url origin blablablabla` where `blablablabla` is the addres
 
 
 
-### How do I change the message of the last commit?
-
-Run `git commit --amend -m "New commit message"`.
 
 
+
+### How do I change messages in previous commit?
+
+To change the message of the *last* commit, run `git commit --amend -m "New commit message"`. Otherwise, read the manual because git is too user-friendly.
 
 
 ### Error when push!
