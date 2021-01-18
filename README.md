@@ -17,7 +17,13 @@ Whereever you want to work, open a terminal in the folder of your project. First
 For removing a file, simply remove it!
    For adding a file that you want git to keep track, run `git add miaou.txt` where `miaou.txt` is the file you want to add.
    
+  
+  
+## Git pull
+
+Sometimes `git pull` is made difficult. Do you know why? Because `git` opens a `vi` interface! `vi` is a very super-easy intuitive text editor, and it is so obvious that quitting `vi` is by pressing Ctrl + XW (I think).
    
+  
 ## Conflicts
 
  Sometimes, the system indicates that you have made changes that differ from what your colleagues have done. In that case, do `git pull` before.
