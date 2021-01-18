@@ -37,8 +37,8 @@ Sometimes `git pull` is made difficult. Do you know why? Because `git` opens a `
     
  (do not ask me what is `cbc151ae7fa34600f830302e52d85d6109aab9c7`, git should remain a bit obscure ;) )
     
-    In that case, just edit the files and keep the version of the lines you like. Remove the ugly lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7`. Also, in order to solve conflicts, I strongly recommend to use Visual Studio Code for editing text files, because solving conflicts is as easy as clicking!
-    In case of conflicts, if they are solved, simply do `git commit -a -m "conflict solved"` and `git push`. I do not know what happens if your file contains lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7` on purpose. It would be very interesting to know which lines are the real content of the files and which are the new lines inserted by git. Hum... no it is not interesting.
+   In that case, just edit the files and keep the version of the lines you like. Remove the ugly lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7`. Also, in order to solve conflicts, I strongly recommend to use Visual Studio Code for editing text files, because solving conflicts is as easy as clicking!
+   In case of conflicts, if they are solved, simply do `git commit -a -m "conflict solved"` and `git push`. I do not know what happens if your file contains lines `<<<<<<< HEAD`, `=======` and `>>>>>>> cbc151ae7fa34600f830302e52d85d6109aab9c7` on purpose. It would be very interesting to know which lines are the real content of the files and which are the new lines inserted by git. Hum... no it is not interesting.
 
 
 
