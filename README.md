@@ -1,6 +1,6 @@
 # How to use git
 
-This guide is sarcastic. Of we all love git! git is very easy to use. You just have to learn 1024 different commands.
+This guide is sarcastic. Of course we all love git! git is very easy to use. You just have to learn 1024 different commands.
 
 ## Basics
 
