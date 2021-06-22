@@ -56,7 +56,7 @@ Branching is a nice mechanism, but its use is counterintuitively simple. For ins
 To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ..."). 
 To move to a branch, we could have imagined "git changebranch ..." or "git gotobranch ...", but no.. it is `git checkout <nameofmybranch>`. 
 
-<img src="branchmasteramazingfix.png"/>
+<img src="branchmasteramazingfix.png" height="300px"/>
 
 
 
