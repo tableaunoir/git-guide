@@ -51,15 +51,22 @@ Run `ssh-keygen -t rsa -b 4096`.
 
 ## Branches
 
-Branching is a nice mechanism, but its use is counterintuitively simple. For instance, if you want to list the existing branches, but to branch, use `git branch`. Yes! `git branch` does not branch, otherwise the name of the command would have been to transparent. A command like "git list-branch" would have been too crystal clear. 
+Branching is a nice mechanism, but its use is counterintuitively simple. 
+
+### List the branch names
+
+If you want to list the existing branches, but to branch, use `git branch`. Yes! `git branch` does not branch, otherwise the name of the command would have been to transparent. A command like "git list-branch" would have been too crystal clear. 
+
+
+### Create a branch
 
 To create a branch, do `git branch <nameofmybranch>`. (yes that is the same command... we could have imagined "git newbranch ..."). 
 To move to a branch, we could have imagined "git changebranch ..." or "git gotobranch ...", but no.. it is `git checkout <nameofmybranch>`. 
 
+
+### Merge
+
 <img src="branchmasteramazingfix.png" height="300px"/>
-
-
-
 
 
 Suppose you have a branch called `amazingfix` and you want to include this amazing fix into the main branch `master`. Proceed as follows:
